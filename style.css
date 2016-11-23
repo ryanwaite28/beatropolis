@@ -1,0 +1,90 @@
+/* New Style */
+
+body, html {
+  overflow: hidden;
+}
+
+#topbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid black;
+}
+
+#tb-logo-c {
+  float:left;
+}
+#tb-text-c {
+  float:left;
+  width: 275px;
+  max-width: 100%;
+}
+#tb-list-c {
+  float:left;
+}
+
+#tb-text {
+  margin: 0px;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: center;
+}
+
+#tb-links {
+  margin: 0px;
+  padding: 0px;
+  height: 50px;
+  position: relative;
+  /*border-left: 1px solid grey;
+  border-right: 1px solid grey;*/
+}
+#tb-links li {
+  float: left;
+  position: relative;
+  padding: 0px 25px;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  list-style: none;
+}
+#tb-links li ul {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+  width: 200px;
+  border: 1px solid black;
+  display: none;
+}
+#tb-links li ul li {
+  float: none;
+  display: block;
+  padding: 0px 10px;
+  list-style: none;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+}
+#tb-links li:hover {
+  background: black;
+  color: white;
+
+}
+#tb-links li:hover ul {
+  display: block;
+
+}
+#tb-links li:hover ul li {
+  background: black;
+  color: white;
+}
+
+/**/
+
+#main {
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+}
